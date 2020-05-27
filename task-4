@@ -1,0 +1,50 @@
+Andra_pradesh=("Andhra Pradesh, state of India, located in the southeastern part of the subcontinent. It is bounded by the Indian states of Tamil Nadu to the south, Karnataka to the southwest and west, Telangana to the northwest and north, and Odisha to the northeast. The eastern boundary is a 600-mile (970-km) coastline along the Bay of Bengal. Telangana was a region within Andhra Pradesh for almost six decades, but in 2014 it was carved off to form a separate state. The capital of both Andhra Pradesh and Telangana is Hyderabad, in west-central Telangana.")
+Telangna=("Telangana, also spelled Telengana or Telingana, constituent state of south-central India. It is bordered by the states of Maharashtra to the north, Chhattisgarh and Odisha to the northeast, Andhra Pradesh to the southeast and south, and Karnataka to the west. The area of what is now Telangana constituted the north-central and northeastern portions of Andhra Pradesh for almost six decades, but on June 2, 2014, that territory was calved off to form a separate state. The capital of both Telangana and Andhra Pradesh is Hyderabad, in west-central Telangana.")
+Karnataka=("Karnataka, formerly (until 1973) Mysore, state of India, located on the western coast of the subcontinent. It is bounded by the states of Goa and Maharashtra to the north, Telangana to the east, Tamil Nadu to the southeast, and Kerala to the south and by the Arabian Sea to the west. The state extends for about 420 miles (675 km) from north to south and for about 300 miles (480 km) from east to west. Its coastline stretches for some 200 miles (320 km). The capital is Bengaluru (Bangalore), near the southeastern border.")
+Kerla=("Kerala, southwestern coastal state of India. It is a small state, constituting only about 1 percent of the total area of the country. Kerala stretches for about 360 miles (580 km) along the Malabar Coast, varying in width from roughly 20 to 75 miles (30 to 120 km). It is bordered by the states of Karnataka (formerly Mysore) to the north and Tamil Nadu to the east and by the Arabian Sea to the south and west; it also surrounds Mahe, a segment of the state of Puducherry, on the northwestern coast. The capital is Thiruvananthapuram (Trivandrum).")
+Tamil_Nadu=("Tamil Nadu, state of India, located in the extreme south of the subcontinent. It is bounded by the Indian Ocean to the east and south and by the states of Kerala to the west, Karnataka (formerly Mysore) to the northwest, and Andhra Pradesh to the north. Enclosed by Tamil Nadu along the north-central coast are the enclaves of Puducherry and Karaikal, both of which are part of Puducherry union territory. The capital is Chennai (Madras), on the coast in the northeastern portion of the state.")
+
+Andra_pradesh_language=("Major language: Telgue.")
+Telangna_language=("Major language: Telgue.")
+Karnataka_language=("Major language: kannada.")
+Kerla_language=("Major language: Malyalam.")
+Tamil_Nadu_language=("Major language: Tamil.")
+
+
+Andra_pradesh_crop=("Major crop: Rice , Cash crop Tobacco, etc.")
+Telangna_crop=("Major crop: Paddy rice , etc.")
+Karnataka_crop=("Major crop:Rice, pulses")
+Kerla_crop=("Major crop: Cash crops like coffe ,rubber, etc.")
+Tamil_Nadu_crop=("Major crop: Sugarcane , jowar, etc.")
+
+#MAIN PROGRAM#
+print('You can get information of any state  in southern India.')
+user=str(input("Enter the state you want to get information: ")).lower()
+
+
+if user =="andrapradesh" or user== "andra-pradesh" :
+    print(Andra_pradesh)
+    print(Andra_pradesh_language)
+    print(Andra_pradesh_crop)
+
+elif user =="telangna" :
+    print(Telangna)
+    print(Telangna_language)
+    print(Telangna_crop)
+    
+elif user =="karnataka":
+    print(Karnataka)
+    print(Karnataka_language)
+    print(Karnataka_crop)
+    
+elif user=="kerla" :
+    print(Kerla)
+    print(Kerla_language)
+    print(Kerla_crop)
+    
+elif user== "tamilnadu" or user=="tamil-nadu" :
+    print(Tamil_Nadu)
+    print(Tamil_Nadu_language)
+    print(Tamil_Nadu_crop)
+
+    
