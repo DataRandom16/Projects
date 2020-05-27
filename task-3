@@ -1,0 +1,22 @@
+name = input('Enter yor name : ').lower()
+
+vovel_found=[]
+count=0
+if 'a' in name:
+    vovel_found.append('a')
+    count=count+1
+if 'e' in name:
+    vovel_found.append('e')
+    count=count+1
+if 'i' in name:
+    vovel_found.append('i')
+    count=count+1
+if 'o' in name:
+    vovel_found.append('o')
+    count=count+1
+if 'u' in name:
+    vovel_found.append('u')    
+    count=count+1
+
+print("The vovels in your name are" + str(vovel_found))
+print('The total vovels in your name are '+str(count))
