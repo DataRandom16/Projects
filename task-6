@@ -1,0 +1,19 @@
+def square(a):
+    p=a*a
+    print(p)
+
+do= input('Do you want to start calculation: ').lower()
+
+while do =='yes':  
+    num=int(input('Please enter the number:'))
+    square(num)
+    ask=input('Do you want to calculate more: ').lower()
+    
+    if ask=="yes":
+        num=int(input('Please enter the number:'))
+        square(num)
+        ask=input('Do you want to calculate more: ').lower()
+        
+    else:
+        break
+    
