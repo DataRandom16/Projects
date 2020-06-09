@@ -2,17 +2,16 @@ def square(a):
     p=a*a
     print(p)
 
-do= input('Do you want to start calculation: ').lower()
+do= "yes"
 
 while do =='yes':  
-    num=int(input('Please enter the number:'))
-    square(num)
-    ask=input('Do you want to calculate more: ').lower()
+    
+    ask=input('Do you want to calculate : ').lower()
     
     if ask=="yes":
         num=int(input('Please enter the number:'))
         square(num)
-        ask=input('Do you want to calculate more: ').lower()
+        
         
     else:
         break
