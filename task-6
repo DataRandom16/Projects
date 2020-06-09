@@ -1,7 +1,3 @@
-def square(a):
-    p=a*a
-    print(p)
-
 do= "yes"
 
 while do =='yes':  
@@ -9,8 +5,8 @@ while do =='yes':
     ask=input('Do you want to calculate : ').lower()
     
     if ask=="yes":
-        num=int(input('Please enter the number:'))
-        square(num)
+        num=int(input('Please enter the number : '))
+        print('The squared number is : ' + str(num*num))
         
         
     else:
