@@ -1,0 +1,17 @@
+import pygame 
+
+pygame.init()
+
+W=260
+H=200
+
+screen=pygame.display.set_mode((W,H))
+
+pygame.display.set_caption("first pro ")
+
+img = pygame.image.load("python programs/om.jpg")
+
+screen.blit(img,(0,0))
+
+while True:
+    pygame.display.update()
