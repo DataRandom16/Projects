@@ -1,0 +1,33 @@
+import requests
+
+from time import sleep
+
+
+statemnt = "T"
+
+#https://discord.com/api/v9/channels/847113010534285362/messages
+
+payload = {
+    'content' : "!work"
+    }
+
+data = {
+        'content ' : "!dep all"
+        }
+
+
+header = {
+    'authorization': 'ODQ1NjE5MzMyOTM4OTg5NTk4.YK5hMQ.VJlJ3-RGq8HW_S68zZHQGGJKDSU'
+    }
+
+header1 = {
+    'authorization': 'ODQ1NjE5MzMyOTM4OTg5NTk4.YK5hMQ.VJlJ3-RGq8HW_S68zZHQGGJKDSU'
+    }
+
+while statemnt == "T" :
+    
+    requests.post("https://discord.com/api/v9/channels/847113010534285362/messages", data=payload , headers=header)
+    
+    print("done")
+    
+    sleep(925)
