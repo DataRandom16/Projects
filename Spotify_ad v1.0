@@ -1,0 +1,69 @@
+import requests 
+import subprocess
+import os
+from time import sleep
+
+path = 'C:\\Users\\LENOVO\\AppData\\Roaming\\Spotify\\Spotify.exe'
+
+token = 'BQB3OoXzN0D-hrmMdZyLLfyFmGb6YJIzBZ6FlVtVbwZ8Gu0qIUn88NgTD67rEA2YiPw3FFHWCe05euFo-TaMMa2F-hSBuOp1kVKxxcBI_PdH_tPZkVWl0hyiUsXEHD9ZSRlj_QWdM9shSmI0A5lHT1rmK6qim_5ZHsI0'
+
+url = 'https://api.spotify.com/v1/me/player/currently-playing'
+
+def current_track(token):
+    
+    response = requests.get(
+        
+        url,
+        
+        headers ={
+            "Authorization" : f'Bearer {token}'
+            }
+            )
+    
+    j_resp = response.json()
+    
+    tape = j_resp['currently_playing_type']
+    
+    if tape =="ad":
+        
+         ad= True
+         
+    else:
+         ad= False
+        
+    return ad
+
+def close():
+    os.system(f'taskkill /F /IM Spotify.exe')
+    
+def reopen ():
+    subprocess.Popen(path)
+    
+
+def main():
+    ad= current_track(token)
+    
+    if ad:
+        print("Dirt found")
+        
+        close()
+        
+        print("dirt cleaned")
+        
+        reopen()
+        
+        sleep(0.1)
+        
+
+
+if __name__ == '__main__':
+
+	while True:
+
+
+		
+		try:
+			main()
+		except:
+			print('err')
+
